@@ -76,7 +76,7 @@
         <p>為了讓我們更快找出問題，來信時請盡量提供：</p>
         <ol>
           <li><strong>裝置型號與系統版本</strong>（例如 iPhone 15、iOS 18.5）；</li>
-          <li><strong>App 版本</strong>（可於 App 設定頁查看）；</li>
+          <li><strong>App 版本</strong>（若不確定可略過）；</li>
           <li><strong>問題發生的操作步驟</strong>與實際發生的狀況；</li>
           <li><strong>畫面截圖</strong>（如有錯誤訊息，請一併截圖）；</li>
           <li>若為<strong>辨識或分級結果的問題</strong>，請附上該食品營養標示的照片，方便我們核對。</li>
@@ -97,31 +97,39 @@
       <div class="faq-list">
         <details class="faq-item">
           <summary>河馬眼睛是什麼？可以幫我做什麼？</summary>
-          <div class="faq-body"><p>河馬眼睛是海馬博一開發中的 iPhone App。用手機相機掃描食品包裝背面的成分表與營養標示，App 會自動辨識糖、鈉、飽和脂肪等數值，並以紅、黃、綠燈三級燈號呈現，協助您快速理解食品的營養輪廓，作為日常選購的參考工具。</p></div>
+          <div class="faq-body"><p>河馬眼睛是海馬博一開發中的 iPhone App。用手機拍下食品包裝背面的成分表與營養標示（或從相簿選取照片），AI 會自動辨識全部成分，以紅、黃、綠燈三級燈號與逐項成分風險說明呈現，還能依您與家人設定的過敏原清單逐項提醒，並推薦更安心的綠燈替代品，作為日常選購的參考工具。</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>需要註冊帳號嗎？</summary>
+          <div class="faq-body"><p>需要。掃描與個人化功能（過敏原提醒、掃描紀錄、收藏）需要帳號，讓您的紀錄能在裝置間同步；可使用 Email 註冊或以 Google 帳號登入。部分公開內容（如綠燈清單網頁版）不需登入即可瀏覽。帳號資料的處理方式請見<a href="/hippo-eyes/privacy/">河馬眼睛隱私權政策</a>。</p></div>
         </details>
         <details class="faq-item">
           <summary>紅黃綠燈是怎麼判定的？</summary>
-          <div class="faq-body"><p>App 參考台灣衛福部及相關公開資料（包括國健署「食物紅綠燈」衛教概念、校園飲品及點心販售營養基準，以及食藥署與國健署規劃中的紅黃綠標示指引草案），將營養標示中的糖、鈉、飽和脂肪數值與公開門檻比對後給出燈號；固體食品以每 100 公克、液體食品以每 100 毫升為判定基準。詳細門檻請見<a href="/hippo-eyes/#standard">紅黃綠燈分級標準說明</a>。</p></div>
+          <div class="faq-body"><p>燈號由 AI 模型依本公司設計的評級規則綜合判讀，採「添加物優先、營養其次」原則：含人工甜味劑、化學色素、氫化油脂等高風險添加物，或糖、鈉、飽和脂肪含量過高會給紅燈；含防腐劑、未標明的「香料」等需留意成分，或營養數值中等給黃燈；成分單純且糖、鈉、飽和脂肪含量低才給綠燈。含酒精產品一律紅燈。規則設計參考衛福部及相關公開衛教資訊的紅綠燈概念，詳見<a href="/hippo-eyes/#standard">紅黃綠燈分級標準說明</a>。</p></div>
         </details>
         <details class="faq-item">
           <summary>使用時需要連接網路嗎？</summary>
-          <div class="faq-body"><p>App 以裝置端辨識為設計原則，核心的掃描與分級功能規劃可離線使用；部分功能（如標準資料更新）可能需要網路連線。實際支援情形以正式上架版本的說明為準。</p></div>
+          <div class="faq-body"><p>需要。成分辨識由伺服器端的 AI 模型進行，掃描時必須連接網路；離線時無法掃描，但仍可瀏覽已載入的內容。</p></div>
         </details>
         <details class="faq-item">
           <summary>我拍的照片會被上傳或保存嗎？</summary>
-          <div class="faq-body"><p>您拍攝的影像僅用於辨識營養標示文字。辨識以裝置端處理為原則；若部分辨識需經伺服器處理，影像僅供即時辨識，完成後即刪除，不會長期保存，也不會與您的身分連結。我們不會出售或將影像用於廣告。詳情請見<a href="/hippo-eyes/privacy/">河馬眼睛隱私權政策</a>。</p></div>
+          <div class="faq-body"><p>會。照片會以加密連線上傳至伺服器進行 AI 辨識，分析完成後與結果一併保存在您帳號的雲端掃描紀錄中，方便您回顧查詢；照片以不可猜測的專屬連結儲存，其他使用者看到的公開內容（如分享頁、綠燈清單）不會顯示您的身分與原始照片。您可於網頁版逐筆刪除掃描紀錄，或來信請求刪除。我們不會出售您的影像，也不會將其用於廣告。詳情請見<a href="/hippo-eyes/privacy/">河馬眼睛隱私權政策</a>。</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>掃描需要付費嗎？</summary>
+          <div class="faq-body"><p>App 免費下載，目前每天提供免費掃描額度；超過後可使用掃描點數，或訂閱 Hippo Plus 享無限掃描（適用公平使用原則）與家庭檔案等完整功能。訂閱與點數包透過 Apple 應用程式內購買，實際方案與價格以 App 內顯示為準。</p></div>
         </details>
         <details class="faq-item">
           <summary>燈號結果可以當作醫療或營養建議嗎？</summary>
-          <div class="faq-body"><p>不行。燈號分級係參考公開資料整理，僅供選購時的一般性參考，不構成醫療、營養治療或疾病預防之建議。紅燈也不代表該食品不安全，僅提醒該成分含量相對較高。不同年齡與健康狀況的營養需求不同，有特殊飲食需求（如糖尿病、腎臟病、高血壓）者，請諮詢醫師或營養師。</p></div>
+          <div class="faq-body"><p>不行。燈號由 AI 模型依本公司設計的評級規則判讀，規則設計參考公開衛教資訊，僅供選購時的一般性參考，不構成醫療、營養治療或疾病預防之建議。紅燈也不代表該食品不安全或不合法，僅表示含有建議留意的成分、或糖鈉等含量相對較高。不同年齡與健康狀況的營養需求不同，有特殊飲食需求（如糖尿病、腎臟病、高血壓）者，請諮詢醫師或營養師。</p></div>
         </details>
         <details class="faq-item">
           <summary>河馬眼睛支援哪些裝置？</summary>
-          <div class="faq-body"><p>河馬眼睛規劃於 App Store 上架，支援配備相機的 iPhone；支援的最低 iOS 版本將於上架時在 App Store 頁面公布。其他平台（如 Android）目前尚無確定時程。</p></div>
+          <div class="faq-body"><p>iOS App 支援配備相機、iOS 17.0 以上的 iPhone（不含 iPad 專屬版本）。另提供功能對齊的網頁版（app.littlehippobread.com.tw），可於手機或電腦瀏覽器使用並安裝至主畫面；Android 使用者可透過網頁版使用，原生 Android App 目前尚無確定時程。</p></div>
         </details>
         <details class="faq-item">
           <summary>什麼時候可以下載？</summary>
-          <div class="faq-body"><p>河馬眼睛目前仍在開發中，我們正在進行 Apple Developer Program 相關申請與上架準備。正式上架時間確定後，會第一時間公布於官方網站 kaibaboy.com.tw。如有合作或試用需求，歡迎來信 <a href="mailto:dev@kaibaboy.com.tw">dev@kaibaboy.com.tw</a>。</p></div>
+          <div class="faq-body"><p>河馬眼睛已完成主要功能開發，目前於 TestFlight 測試中，正在準備 App Store 上架送審。正式上架時間確定後，會第一時間公布於官方網站 kaibaboy.com.tw。如有合作或試用需求，歡迎來信 <a href="mailto:dev@kaibaboy.com.tw">dev@kaibaboy.com.tw</a>。</p></div>
         </details>
       </div>
     </div>

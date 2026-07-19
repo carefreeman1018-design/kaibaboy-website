@@ -27,7 +27,7 @@
 | 2 標語 | `hippo-eyes/index.html` hero 副標；`index.html` 首頁河馬眼睛區塊 |
 | 3 功能清單 | `hippo-eyes/index.html`「功能亮點」5 張卡片 |
 | 4 使用流程 | `hippo-eyes/index.html`「怎麼使用？」4 步驟 |
-| 5 燈號門檻 | `hippo-eyes/index.html`「紅黃綠燈分級標準」兩個表格＋聲明；`index.html` 首頁三顆燈號 pill 描述；兩處手機示意圖數值 |
+| 5 燈號判定邏輯 | `hippo-eyes/index.html`「紅黃綠燈分級標準」AI 評級規則說明＋聲明；`index.html` 首頁三顆燈號 pill 描述；兩處手機示意圖（2026-07-19 起已無門檻表——燈號是 gemini-scan prompt 的 AI 判讀，非數值門檻） |
 | 6 權限 | `hippo-eyes/privacy/index.html` 第二節（相機權限用途） |
 | 7 資料處理 | `hippo-eyes/privacy/index.html` 第一、三、四、五、六節；`support/index.html` FAQ「照片會被上傳嗎」 |
 | 8 裝置需求 | `support/index.html` FAQ「支援哪些裝置」；`hippo-eyes/privacy/` 如有提及 |
@@ -41,7 +41,7 @@
 - **權限字串**：`Info.plist` 的 `NSCameraUsageDescription`、`NSPhotoLibraryUsageDescription` 等
 - **最低 iOS 版本 / 支援裝置**：Xcode 專案 target 的 Deployment Target、`TARGETED_DEVICE_FAMILY`
 - **第三方 SDK**：`Podfile` / `Podfile.lock`（CocoaPods）、`Package.swift` 或 `*.xcodeproj` 的 SPM 依賴、`Package.resolved`
-- **燈號判定邏輯與門檻**：搜尋原始碼中處理「糖 / sugar、鈉 / sodium、飽和脂肪 / saturated、threshold、紅/黃/綠 / red/yellow/green」的檔案
+- **燈號判定邏輯**：真正的判定在 web repo `supabase/functions/gemini-scan/index.ts` 的中文 prompt（AI 評級規則：添加物優先、營養其次；無數值門檻、無固體/液體之分）；綠燈清單入庫的二次複驗見 `green-list-gate/index.ts`
 - **影像辨識方式（裝置端 vs 伺服器）**：找 OCR / Vision / `VNRecognizeTextRequest` 相關程式，看是否有網路上傳（URLSession、API endpoint）
 - **帳號系統**：找 login / signup / auth / 使用者資料儲存（有帳號 → 隱私政策要改，且 App 要有刪除帳號功能）
 - **掃描紀錄儲存位置**：本地（UserDefaults / CoreData / SQLite / 檔案）還是雲端（Firebase / CloudKit / 自家 API）
@@ -54,7 +54,7 @@
 - [ ] 隱私政策內容與日後填 App Store Connect 的 **App Privacy（營養標籤）問卷答案**一致（一個說「不蒐集」一個說「可能上傳」＝退件風險）
 - [ ] 若 App 有帳號系統 → App 內要有「刪除帳號」功能，隱私政策也要說明刪除途徑（5.1.1(v)）
 - [ ] 若導入新第三方 SDK → 隱私政策第五節具名揭露其名稱與用途
-- [ ] 燈號門檻若改，網站表格、首頁 pill、兩處手機示意圖數值全部同步，且示意圖數值仍符合它所顯示的燈號
+- [ ] 燈號評級規則（gemini-scan prompt）若改，網站分級標準說明、首頁 pill、兩處手機示意圖全部同步，且示意圖內容仍符合它所顯示的燈號
 - [ ] 「僅供參考、非醫療建議」「特殊飲食需求請諮詢醫師/營養師」聲明還在
 - [ ] 全站繁中、無簡體字與中國大陸用語
 
