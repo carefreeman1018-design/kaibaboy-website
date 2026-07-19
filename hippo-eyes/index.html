@@ -17,7 +17,7 @@
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
   <script type="application/ld+json">
   {
@@ -36,15 +36,7 @@
 <header class="site-header">
   <div class="container">
     <a class="brand" href="/">
-      <svg class="logo-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <defs>
-          <linearGradient id="lg-head" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#1e88e5"/><stop offset="1" stop-color="#0a2540"/>
-          </linearGradient>
-        </defs>
-        <rect width="64" height="64" rx="14" fill="url(#lg-head)"/>
-        <text x="32" y="44" font-size="34" font-weight="700" fill="#fff" text-anchor="middle" font-family="'Noto Sans TC',sans-serif">海</text>
-      </svg>
+      <svg class="logo-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#1E6B33"/><text x="32" y="45" font-size="34" font-weight="700" fill="#FAF5EC" text-anchor="middle" font-family="'Noto Serif TC',serif">海</text></svg>
       <span class="brand-text">海馬博一<span class="brand-en">KAIBABOY</span></span>
     </a>
     <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false">
@@ -63,7 +55,7 @@
 <main>
   <section class="page-hero">
     <div class="container">
-      <span class="badge-dev">🦛 開發中・TestFlight 測試中</span>
+      <span class="badge-dev">開發中・TestFlight 測試中</span>
       <h1>河馬眼睛</h1>
       <p>掃一下，看懂營養標示——讓紅黃綠燈成為您挑選食品的好幫手。</p>
     </div>
@@ -83,29 +75,33 @@
           </div>
         </div>
         <div class="phone-wrap">
-          <div class="phone" role="img" aria-label="河馬眼睛 App 畫面示意：掃描成分表與營養標示後顯示綠燈判定結果">
+          <div class="phone" role="img" aria-label="河馬眼睛 App 掃描結果頁示意：綠燈檢驗印章、逐項成分風險與家人標記">
             <div class="phone-screen">
               <div class="phone-notch"></div>
-              <div class="phone-app-bar"><span class="hippo-dot">🦛</span>河馬眼睛</div>
-              <div class="phone-scanbox">
-                將成分表對準框內
-                <div class="scan-lines">
-                  成分：生乳、乳酸菌<br>
-                  營養標示（每 100 公克）<br>
-                  熱量&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;65 大卡<br>
-                  蛋白質&nbsp;&nbsp;&nbsp;&nbsp;6.2 公克<br>
-                  飽和脂肪&nbsp;&nbsp;1.2 公克<br>
-                  糖&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.8 公克<br>
-                  鈉&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;110 毫克
+              <div class="mock-top">
+                <span class="mock-circle" aria-hidden="true">‹</span>
+                <span class="mock-title">鮮乳優格</span>
+                <span class="mock-circle" aria-hidden="true">♡</span>
+              </div>
+              <div class="mock-card mock-verdict">
+                <div class="stamp stamp-pop"><b>安全</b><span>綠燈</span></div>
+                <div class="mock-verdict-info">
+                  <strong>低風險</strong>
+                  <div class="risk-band" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                  <span class="mock-stats">7 安全 · 0 注意 · 0 避免</span>
                 </div>
               </div>
-              <div class="phone-result">
-                <span class="big-dot" aria-hidden="true"></span>
-                <div><strong>綠燈・安全</strong><span>成分單純，糖、鈉、飽和脂肪含量低</span></div>
+              <div class="mock-card">
+                <div class="mock-section-title">成分分析 · 7 項</div>
+                <div class="mock-row"><span class="mock-name">生乳</span><em class="chip safe">安全</em></div>
+                <div class="mock-row"><span class="mock-name">乳酸菌</span><em class="chip safe">安全</em></div>
               </div>
-              <div class="phone-mini-lights">
-                <div class="r">紅燈</div><div class="y">黃燈</div><div class="g">綠燈</div>
+              <div class="mock-card">
+                <div class="mock-section-title">家人標記</div>
+                <div class="mock-row"><span class="mock-name">我</span><span class="mock-ok">✓ OK</span></div>
+                <div class="mock-row"><span class="mock-name">寶寶</span><span class="mock-ok">✓ OK</span></div>
               </div>
+              <p class="mock-disclaimer">結果僅供參考，過敏或疾病請諮詢醫師</p>
             </div>
           </div>
         </div>
@@ -239,15 +235,7 @@
     <div class="footer-grid">
       <div>
         <div class="footer-brand">
-          <svg class="logo-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <defs>
-              <linearGradient id="lg-foot" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#1e88e5"/><stop offset="1" stop-color="#00a6a6"/>
-              </linearGradient>
-            </defs>
-            <rect width="64" height="64" rx="14" fill="url(#lg-foot)"/>
-            <text x="32" y="44" font-size="34" font-weight="700" fill="#fff" text-anchor="middle" font-family="'Noto Sans TC',sans-serif">海</text>
-          </svg>
+          <svg class="logo-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#1E6B33"/><text x="32" y="45" font-size="34" font-weight="700" fill="#FAF5EC" text-anchor="middle" font-family="'Noto Serif TC',serif">海</text></svg>
           海馬博一
         </div>
         <p class="footer-note">台灣 AI 應用開發團隊。<br>以 AI 打造中小企業經營工具、數據分析、聊天機器人與股市回測分析，並開發消費性 App「河馬眼睛」。<br>海馬博一有限公司｜統一編號 60467315<br>地址：新北市土城區中央路3段87號5樓之1<br>聯絡信箱：<a href="mailto:dev@kaibaboy.com.tw">dev@kaibaboy.com.tw</a></p>
