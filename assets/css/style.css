@@ -273,6 +273,16 @@ ul, ol { padding-left: 1.4em; }
   padding: 6px 14px;
   margin-bottom: 18px;
 }
+.badge-live {
+  display: inline-block;
+  background: #E3F1E6;
+  color: #1E6B33;
+  font-family: var(--font-display);
+  font-size: 13px; font-weight: 500; letter-spacing: 0.06em;
+  border-radius: 999px;
+  padding: 6px 14px;
+  margin-bottom: 18px;
+}
 .app-highlight h2 { font-size: clamp(25px, 3.2vw, 33px); }
 .app-desc { color: var(--ink-2); font-size: 16.5px; }
 .app-desc strong { color: var(--ink); }
