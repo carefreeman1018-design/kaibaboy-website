@@ -849,6 +849,7 @@ html.js .stamp-pop { opacity: 0; }
   .group-list, .faq-list, .info-list { padding: 0 18px; }
   .light-row { padding: 22px 20px; }
   .float.f2, .float.f4 { display: none; }
+  .hero-stage .float { display: none; }
   .float.f1 { left: -6px; top: 4%; }
   .float.f3 { right: -6px; top: 30%; }
   .stage .phone { width: min(280px, 74vw); }
