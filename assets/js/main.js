@@ -17,17 +17,23 @@
         toggle.setAttribute('aria-expanded', 'false');
       }
     });
+    // 標出目前所在頁（只比對不含錨點的頁面連結）
+    var path = location.pathname.replace(/index\.html$/, '');
+    nav.querySelectorAll('a').forEach(function (a) {
+      var href = a.getAttribute('href');
+      if (href.indexOf('#') === -1 && href !== '/' && path.indexOf(href) === 0) a.setAttribute('aria-current', 'page');
+    });
   }
 
   // 頁尾自動年份
   var year = document.querySelector('[data-year]');
   if (year) year.textContent = new Date().getFullYear();
 
-  // 進場動效（漸進增強：無 JS / 減少動態時內容照常顯示）
+  // 進場動效（漸進增強：無 JS／減少動態時內容照常顯示）
   var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!reduced && 'IntersectionObserver' in window) {
     var revealTargets = document.querySelectorAll(
-      '.section-head, .card, .step, .traffic-pill, .faq-item, .std-block, .disclaimer, .contact-box, .why-list li'
+      '.section-title, .statement, .tile, .product-tile, .light, .step, .plan, .check-list, .light-row, .faq-list, .group-list, .info-list'
     );
     revealTargets.forEach(function (el) { el.classList.add('reveal'); });
 
@@ -43,7 +49,6 @@
     revealTargets.forEach(function (el) { io.observe(el); });
     document.querySelectorAll('.stamp-pop').forEach(function (el) { io.observe(el); });
   } else {
-    // 減少動態：印章直接顯示
     document.querySelectorAll('.stamp-pop').forEach(function (el) { el.classList.add('in'); });
   }
 })();
