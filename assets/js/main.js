@@ -25,6 +25,20 @@
     });
   }
 
+  // 使用流程：手機釘住，捲到哪一步就換哪個畫面
+  var story = document.querySelector('.story');
+  if (story && 'IntersectionObserver' in window) {
+    var screens = story.querySelectorAll('.screen');
+    var so = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var i = Number(entry.target.getAttribute('data-screen'));
+        screens.forEach(function (sc, j) { sc.classList.toggle('on', i === j); });
+      });
+    }, { rootMargin: '-45% 0px -45% 0px' });
+    story.querySelectorAll('.story-step').forEach(function (el) { so.observe(el); });
+  }
+
   // 頁尾自動年份
   var year = document.querySelector('[data-year]');
   if (year) year.textContent = new Date().getFullYear();
@@ -33,7 +47,7 @@
   var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!reduced && 'IntersectionObserver' in window) {
     var revealTargets = document.querySelectorAll(
-      '.section-title, .statement, .tile, .product-tile, .light, .step, .plan, .check-list, .light-row, .faq-list, .group-list, .info-list'
+      '.section-title, .display-md, .manifesto, .b-tile, .stats, .reason, .plan, .check-list, .light-row, .faq-list, .group-list, .info-list, .story-step'
     );
     revealTargets.forEach(function (el) { el.classList.add('reveal'); });
 
