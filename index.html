@@ -44,268 +44,168 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main">跳到主要內容</a>
 <header class="site-header">
   <div class="container">
     <a class="brand" href="/">
       <svg class="logo-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g transform="translate(4 1)"><path d="M 10 18 C 16 14, 21 10, 28 8 C 35 6, 41 10, 41 17 C 41 24, 36 28, 33 33 C 30 37.5, 29 41, 30.5 45.5 C 32.5 51.5, 40 54, 44.5 49.5 C 48 45.5, 46 39, 40.5 40" fill="none" stroke="#1E6B33" stroke-width="5.5" stroke-linecap="round"/><circle cx="28" cy="15.5" r="2.5" fill="#1E6B33"/></g></svg>
-      <span class="brand-text">海馬博一<span class="brand-en">KAIBABOY</span></span>
+      <span class="brand-text">海馬博一</span>
     </a>
     <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg>
     </button>
     <nav class="site-nav" aria-label="主選單">
       <a href="/#services">服務項目</a>
-      <a href="/hippo-eyes/">河馬眼睛 App</a>
+      <a href="/hippo-eyes/">河馬眼睛</a>
       <a href="/#about">關於我們</a>
-      <a href="/support/">支援中心</a>
-      <a class="nav-cta" href="/#contact">聯絡我們<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="/support/">支援</a>
+      <a href="/#contact">聯絡我們</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <!-- Hero -->
-  <section class="hero">
+<main id="main">
+  <section class="hero-v2">
     <div class="container">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <span class="hero-eyebrow">台灣 AI 應用開發團隊</span>
-          <h1>用 AI，把中小企業的<br><em>日常變簡單。</em></h1>
-          <p class="hero-sub">海馬博一為辦公室與中小企業打造經營工具、數據分析與聊天機器人服務，把繁瑣的工作交給科技，讓您專注在真正重要的事。</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#services">探索我們的服務<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="btn btn-ghost" href="/hippo-eyes/">認識河馬眼睛 App</a>
-          </div>
-          <p class="hero-proof">
-            <!-- 河馬標記幾何＝App BrandKit.swift 的 HippoMark（以 30pt 渲染值換算到 64 格）：眼是窄膠囊、鼻是圓點且比眼更外側偏下。改這裡前先對照 App。 -->
-            <svg class="logo-hippo" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="32" cy="32" r="29.12" fill="none" stroke="#A89B85" stroke-width="2.13" stroke-dasharray="4.27 4.27" stroke-linecap="round"/><circle cx="32" cy="32" r="22.08" fill="#F0D080"/><rect x="24.32" y="25.07" width="3.2" height="6.83" rx="1.6" fill="#2B2620"/><rect x="36.48" y="25.07" width="3.2" height="6.83" rx="1.6" fill="#2B2620"/><circle cx="22.08" cy="39.68" r="2.56" fill="#2B2620"/><circle cx="41.92" cy="39.68" r="2.56" fill="#2B2620"/></svg>
-            自有產品「河馬眼睛」：拍下成分表，AI 幫全家把關。
-          </p>
+      <div>
+        <h1 class="display">把 AI<br>做進<span class="grad">日常</span>。</h1>
+        <p class="lead">海馬博一為中小企業打造經營工具、數據分析與聊天機器人，也做了自己的 App「河馬眼睛」。</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#contact">聯絡我們</a>
+          <a class="link" href="/hippo-eyes/">認識河馬眼睛</a>
         </div>
-        <div class="phone-wrap">
-          <div class="phone" role="img" aria-label="河馬眼睛 App 掃描結果頁示意：綠燈檢驗印章、逐項成分風險與家人標記">
-            <div class="phone-screen">
-              <div class="phone-notch"></div>
-              <div class="mock-top">
-                <span class="mock-circle" aria-hidden="true">‹</span>
-                <span class="mock-title">鮮乳優格</span>
-                <span class="mock-circle" aria-hidden="true">♡</span>
-              </div>
-              <div class="mock-card mock-verdict">
-                <div class="stamp stamp-pop"><b>安全</b></div>
-                <div class="mock-verdict-info">
-                  <strong>低風險</strong>
-                  <div class="risk-band" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-                  <span class="mock-stats">7 安全 · 0 注意 · 0 避免</span>
-                </div>
-              </div>
-              <div class="mock-card">
-                <div class="mock-section-title">成分分析 · 7 項</div>
-                <div class="mock-row"><span class="mock-name">生乳</span><em class="chip safe">安全</em></div>
-                <div class="mock-row"><span class="mock-name">乳酸菌</span><em class="chip safe">安全</em></div>
-              </div>
-              <div class="mock-card">
-                <div class="mock-section-title">家人標記</div>
-                <div class="mock-row"><span class="mock-name">我</span><span class="mock-ok">✓ OK</span></div>
-                <div class="mock-row"><span class="mock-name">寶寶</span><span class="mock-ok">✓ OK</span></div>
-              </div>
-              <p class="mock-disclaimer">結果僅供參考，過敏或疾病請諮詢醫師</p>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div class="seahorse-art" aria-hidden="true">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><g transform="translate(4 1)"><path class="sh-path" pathLength="150" d="M 10 18 C 16 14, 21 10, 28 8 C 35 6, 41 10, 41 17 C 41 24, 36 28, 33 33 C 30 37.5, 29 41, 30.5 45.5 C 32.5 51.5, 40 54, 44.5 49.5 C 48 45.5, 46 39, 40.5 40"/><circle class="sh-eye" cx="28" cy="15.5" r="2.5"/></g></svg>
       </div>
     </div>
   </section>
 
-  <!-- 服務項目 -->
   <section class="section" id="services">
     <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">WHAT WE DO</p>
-        <h2>我們的服務</h2>
-        <p>從日常營運到資料決策，我們用 AI 為中小企業補上最實用的那一塊。</p>
-      </div>
-      <div class="card-grid">
-        <div class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.7 4.3L18 9l-4.3 1.7L12 15l-1.7-4.3L6 9l4.3-1.7L12 3z"/><path d="M19 14l.9 2.1L22 17l-2.1.9L19 20l-.9-2.1L16 17l2.1-.9L19 14z"/><path d="M5 15l.7 1.8L7.5 17.5l-1.8.7L5 20l-.7-1.8L2.5 17.5l1.8-.7L5 15z"/></svg>
+      <h2 class="display-md">我們的服務</h2>
+      <div class="bento">
+        <article class="b-tile span-4">
+          <p class="b-kicker">AI 經營工具</p>
+          <h3 class="b-title">例行工作，交給 AI。</h3>
+          <p class="b-text">文件整理、行政庶務、日常營運裡重複的事，依您的實際流程量身打造。</p>
+          <div class="b-visual mini-doc" aria-hidden="true">
+            <div>整理本月報價單<span>完成</span></div>
+            <div>彙整客戶來信重點<span>完成</span></div>
+            <div>產生週報草稿<span>完成</span></div>
           </div>
-          <h3>AI 經營工具</h3>
-          <div class="card-tagline">把例行工作交給 AI，讓團隊專注核心業務</div>
-          <p>我們為辦公室與中小企業開發貼合實際流程的 AI 經營工具，協助處理文件整理、行政庶務與日常營運中的重複性工作。這些能力也經過自有產品的實戰驗證——「河馬眼睛」的 AI 影像辨識與成分分析，就是我們把 AI 做進日常的例子。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><rect x="5" y="12" width="3.4" height="6" rx="1"/><rect x="10.3" y="8" width="3.4" height="10" rx="1"/><rect x="15.6" y="4" width="3.4" height="14" rx="1"/></svg>
+        </article>
+        <article class="b-tile span-2">
+          <p class="b-kicker">數據分析</p>
+          <h3 class="b-title">資料，變成決策依據。</h3>
+          <p class="b-text">把散落各處的營運資料整理成看得懂的報表。</p>
+          <div class="b-visual mini-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+        <article class="b-tile span-2">
+          <p class="b-kicker">聊天機器人</p>
+          <h3 class="b-title">全天候回覆。</h3>
+          <p class="b-text">依您的業務內容訓練，回答客戶與同事的問題。</p>
+          <div class="b-visual mini-chat" aria-hidden="true">
+            <p class="q">週六有營業嗎？</p>
+            <p class="a">有的，週六 10:00–18:00 照常營業。</p>
           </div>
-          <h3>數據分析</h3>
-          <div class="card-tagline">讓沉睡的資料，變成看得懂的決策依據</div>
-          <p>許多企業累積了大量營運資料，卻不知道從何用起。我們協助您整理、分析與視覺化這些資料，把散落各處的數字轉化為清楚易懂的報表與洞察，讓經營決策有憑有據，而不是憑感覺。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-8 8H5l-2 2V12a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8z"/><circle cx="9.5" cy="12" r="0.8" fill="currentColor"/><circle cx="13" cy="12" r="0.8" fill="currentColor"/><circle cx="16.5" cy="12" r="0.8" fill="currentColor"/></svg>
+        </article>
+        <article class="b-tile span-4">
+          <p class="b-kicker">股市回測分析</p>
+          <h3 class="b-title">用歷史資料，檢驗策略。</h3>
+          <p class="b-text">把策略研究系統化、數據化。</p>
+          <div class="b-visual mini-line" aria-hidden="true">
+            <svg viewBox="0 0 600 130" preserveAspectRatio="none"><defs><linearGradient id="lineFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1E6B33" stop-opacity="0.18"/><stop offset="1" stop-color="#1E6B33" stop-opacity="0"/></linearGradient></defs><line class="grid" x1="0" y1="32" x2="600" y2="32"/><line class="grid" x1="0" y1="72" x2="600" y2="72"/><line class="grid" x1="0" y1="112" x2="600" y2="112"/><path class="area" d="M0 100 C 60 92, 90 96, 140 80 S 230 88, 280 64 S 380 70, 430 46 S 540 40, 600 22 L 600 130 L 0 130 Z"/><path class="ln" d="M0 100 C 60 92, 90 96, 140 80 S 230 88, 280 64 S 380 70, 430 46 S 540 40, 600 22"/></svg>
           </div>
-          <h3>聊天機器人</h3>
-          <div class="card-tagline">全天候的智慧客服與業務助手</div>
-          <p>我們可為您打造以 AI 驅動的聊天機器人應用，用於客戶服務、常見問題回覆與內部知識查詢。機器人可依您的業務內容量身訓練，讓服務不打烊，也讓團隊從重複問答中解放出來。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l5-5 4 4 8-8"/><path d="M15 8h5v5"/><path d="M3 21h18"/></svg>
-          </div>
-          <h3>股市回測分析</h3>
-          <div class="card-tagline">用歷史資料檢驗策略，讓研究更有系統</div>
-          <p>我們投入股市回測分析工具的開發，以歷史市場資料檢驗交易策略的表現，將研究過程系統化、數據化。此類工具屬於資料分析與回測用途，不提供任何投資建議，歷史回測結果亦不代表未來績效、不保證獲利。</p>
-        </div>
+          <p class="fine b-fine">僅供資料分析與回測，不提供任何投資建議；歷史回測結果不代表未來績效、不保證獲利。</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- 河馬眼睛 -->
-  <section class="section section-alt" id="hippo">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">OUR PRODUCT</p>
-        <h2>河馬眼睛 App</h2>
-        <p>把我們的 AI 做進日常：拍下成分表，幾秒鐘看懂這一包能不能安心帶回家。</p>
+  <section class="section night" id="hippo">
+    <div class="container center">
+      <div class="product-mark"><img class="app-icon" src="/assets/app-icon.png" alt="" width="56" height="56"><span>河馬眼睛</span></div>
+      <h2 class="display">這一包，<br><span class="grad-night">適合帶回家嗎？</span></h2>
+      <p class="body-lg" style="max-width:30em;margin:0 auto">拍下成分表，AI 幾秒內用紅、黃、綠燈告訴您，還會依過敏原清單提醒。</p>
+      <div class="actions">
+        <a class="link" href="/hippo-eyes/">了解更多</a>
+        <a class="link" href="https://apps.apple.com/app/apple-store/id6789447915?pt=129139566&amp;ct=site-home&amp;mt=8" target="_blank" rel="noopener">下載</a>
       </div>
-      <div class="app-feature">
-        <div class="app-card">
-          <div class="app-card-top">
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8V6a2 2 0 0 1 2-2h2M17 4h2a2 2 0 0 1 2 2v2M21 16v2a2 2 0 0 1-2 2h-2M7 20H5a2 2 0 0 1-2-2v-2"/><path d="M4 12h16"/></svg> 自有產品</span>
-            <span class="outline-pill">已在 App Store 上架</span>
-          </div>
-          <div class="app-card-body">
-            <div>
-              <h2>這一包，<br>適合帶回家嗎？</h2>
-              <p class="app-desc">拿起手機拍下食品包裝背面的成分表與營養標示，「河馬眼睛」的 AI 立刻幫您判讀：紅、黃、綠三種燈號加上逐項成分說明，還能依您設定的過敏原清單自動提醒，讓您在貨架前幾秒鐘就能做出更安心的選擇。</p>
+      <div class="stage">
+        <div class="float f1" aria-hidden="true"><div class="stamp stamp-pop"><b>安全</b></div></div>
+        <div class="float f2" aria-hidden="true"><div class="float-card"><i></i>寶寶　✓ OK</div></div>
+        <div class="float f3" aria-hidden="true"><div class="stamp caution stamp-pop"><b>注意</b></div></div>
+        <div class="float f4" aria-hidden="true"><div class="stamp alert stamp-pop"><b>避免</b></div></div>
+        <div class="phone" role="img" aria-label="河馬眼睛 App 掃描結果頁示意：安全印章、風險色帶、成分分析與家人標記">
+          <div class="phone-screen">
+            <div class="phone-notch"></div>
+            <div class="mock-nav" aria-hidden="true">
+              <i class="mock-circle">‹</i>
+              <span><i class="mock-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg></i><i class="mock-circle">♡</i></span>
             </div>
-            <div class="mascot">
-              <img src="/assets/hippo-mascot.png" alt="陪你看成分的黃色河馬" width="150" height="150" loading="lazy">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.7 4.3L18 9l-4.3 1.7L12 15l-1.7-4.3L6 9l4.3-1.7L12 3z"/></svg> 我陪你一起看</span>
+            <div class="mock-title">鮮乳優格</div>
+            <div class="mock-card">
+              <div class="mock-verdict-row">
+                <div class="stamp"><b>安全</b></div>
+                <p class="mock-summary">成分單純，標示完整。</p>
+              </div>
+              <div class="risk-band" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="mock-legend"><span>安全 7</span><span class="c">注意 0</span><span class="a">避免 0</span></div>
             </div>
-          </div>
-          <div class="app-card-actions">
-            <a class="btn btn-honey" href="/hippo-eyes/">了解更多<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="btn btn-outline-light" href="https://apps.apple.com/app/apple-store/id6789447915?pt=129139566&ct=site-home&mt=8" target="_blank" rel="noopener">App Store 下載</a>
-          </div>
-          <div class="app-card-foot">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z"/><path d="M9 12l2 2 4-4.5"/></svg>
-            <span>拍下成分表與營養標示，資訊越完整，判讀越清楚。</span>
+            <div class="mock-note"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l8 3.5v5.2c0 5-3.4 9.1-8 10.8-4.6-1.7-8-5.8-8-10.8V5.5L12 2zm-1.2 13.3l5.6-5.6-1.4-1.4-4.2 4.2-2-2-1.4 1.4 3.4 3.4z"/></svg>標示完整透明，次要成分也誠實列出</div>
+            <div class="mock-card">
+              <div class="mock-section-title">成分分析 · 7 項</div>
+              <div class="mock-row"><span>生乳</span><em class="chip">安全</em></div>
+              <div class="mock-row"><span>乳酸菌</span><em class="chip">安全</em></div>
+            </div>
+            <div class="mock-card">
+              <div class="mock-section-title">家人標記</div>
+              <div class="mock-row"><span>我</span><span class="mock-ok">✓ OK</span></div>
+              <div class="mock-row"><span>寶寶</span><span class="mock-ok">✓ OK</span></div>
+            </div>
+            <p class="mock-disclaimer">結果僅供參考，過敏或疾病請諮詢醫師</p>
           </div>
         </div>
-        <div class="app-result">
-          <div class="app-result-head"><span>三種燈號，一眼看懂</span><span class="demo-label">燈號示意</span></div>
-          <div class="stamp-trio" role="img" aria-label="河馬眼睛的三種檢驗印章：綠燈安全、黃燈注意、紅燈避免">
-            <div class="stamp stamp-pop"><b>安全</b></div>
-            <div class="stamp caution stamp-pop"><b>注意</b></div>
-            <div class="stamp alert stamp-pop"><b>避免</b></div>
-          </div>
-          <div class="traffic-pills">
-            <div class="traffic-pill green">
-              <span class="dot" aria-hidden="true"></span>
-              <div><strong>綠燈</strong><span>成分單純、無需特別留意的添加物，營養標示也沒有明顯偏高的項目。</span></div>
-            </div>
-            <div class="traffic-pill yellow">
-              <span class="dot" aria-hidden="true"></span>
-              <div><strong>黃燈</strong><span>含防腐劑、未標明內容的香料等需留意的成分，或糖、鈉偏高，建議酌量食用。</span></div>
-            </div>
-            <div class="traffic-pill red">
-              <span class="dot" aria-hidden="true"></span>
-              <div><strong>紅燈</strong><span>含人工甜味劑、合成色素、氫化油等高風險添加物，或成分含酒，偶爾解饞就好。</span></div>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong>3</strong><span>種燈號，一眼看懂</span></div>
+        <div class="stat"><strong>7</strong><span>個通路的綠燈清單</span></div>
+        <div class="stat"><strong>5,000+</strong><span>件綠燈清單商品</span></div>
       </div>
     </div>
   </section>
 
-  <!-- 關於我們 -->
   <section class="section" id="about">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-body">
-          <p class="eyebrow">ABOUT US</p>
-          <h2>關於海馬博一</h2>
-          <p>海馬博一有限公司（Kaiba Boy Co., Ltd.）是一間台灣公司，以 AI 技術為核心，專注於開發辦公室與中小企業的經營效率工具。我們相信，先進的技術不該只屬於大型企業——透過貼近實際工作流程的軟體設計，AI 也能成為每一間中小企業日常營運的好幫手。</p>
-          <p>我們的服務涵蓋四大領域：AI 經營工具、數據分析服務、聊天機器人應用，以及股市回測分析工具。從自動化例行事務、把資料轉化為可行動的洞察，到讓客戶服務全天候不間斷，我們的目標始終一致：用技術降低經營的複雜度，讓團隊把時間留給更有價值的工作。</p>
-          <p>除了企業服務，我們也持續投入自有消費性 App 的開發。已在 App Store 上架的「河馬眼睛」App，讓使用者用手機拍下食品包裝背面的成分表與營養標示，由 AI 判讀紅燈、黃燈、綠燈三級與逐項成分風險，幫助大家做出更安心的選擇。無論是企業工具或消費性應用，我們都秉持同樣的信念：讓資訊更透明、讓決策更簡單。</p>
-        </div>
-        <div class="about-aside">
-          <h3>為什麼選擇我們</h3>
-          <ul class="why-list">
-            <li>
-              <span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8.5l3.5 3.5 7-8"/></svg></span>
-              <div><strong>以 AI 為核心的技術實力</strong><span>從經營工具、數據分析到聊天機器人，都以解決真實問題為出發點，而不是為了技術而技術。</span></div>
-            </li>
-            <li>
-              <span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8.5l3.5 3.5 7-8"/></svg></span>
-              <div><strong>懂中小企業的需求</strong><span>產品設計力求輕量、易上手，不需龐大預算與專職資訊人員，也能享受 AI 帶來的效率。</span></div>
-            </li>
-            <li>
-              <span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8.5l3.5 3.5 7-8"/></svg></span>
-              <div><strong>自有產品的開發經驗</strong><span>從產品規劃、開發到上架的完整經驗（如「河馬眼睛」App），回饋到我們為客戶打造的每一項服務。</span></div>
-            </li>
-            <li>
-              <span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8.5l3.5 3.5 7-8"/></svg></span>
-              <div><strong>台灣在地、溝通零距離</strong><span>我們是台灣團隊，以繁體中文溝通、理解在地商業環境，能快速回應您的需求與回饋。</span></div>
-            </li>
-          </ul>
-        </div>
+      <p class="manifesto">好的技術，<br>不該只屬於<span class="grad">大企業</span>。</p>
+      <p class="body-lg" style="max-width:34em">海馬博一有限公司（Kaiba Boy Co., Ltd.）是台灣的 AI 應用開發團隊。我們把 AI 做成中小企業用得起、上手快的工具，也做成每個人買東西時用得到的 App。</p>
+      <div class="reasons">
+        <div class="reason"><div class="num">1</div><strong>解決真實問題</strong><span>從實際工作流程出發，不為技術而技術。</span></div>
+        <div class="reason"><div class="num">2</div><strong>懂中小企業</strong><span>輕量、好上手，不需要專職資訊人員。</span></div>
+        <div class="reason"><div class="num">3</div><strong>自有產品實戰</strong><span>河馬眼睛從規劃、開發到上架都由我們完成。</span></div>
+        <div class="reason"><div class="num">4</div><strong>台灣在地團隊</strong><span>用繁體中文溝通，回應快。</span></div>
       </div>
     </div>
   </section>
 
-  <!-- 聯絡我們 -->
-  <section class="section section-alt" id="contact">
-    <div class="container">
-      <div class="contact-box">
-        <p class="eyebrow">GET IN TOUCH</p>
-        <h2>聯絡我們</h2>
-        <p>想了解 AI 能為您的企業做些什麼？歡迎來信，我們很樂意與您聊聊。</p>
-        <a class="btn btn-primary" href="mailto:dev@kaibaboy.com.tw">寫信給我們</a>
-        <p class="email-line">或直接寄信至 <a href="mailto:dev@kaibaboy.com.tw">dev@kaibaboy.com.tw</a></p>
-      </div>
+  <section class="section alt" id="contact">
+    <div class="container center">
+      <h2 class="display-md">聊聊您的需求。</h2>
+      <a class="email-giant" href="mailto:dev@kaibaboy.com.tw">dev@kaibaboy.com.tw</a>
+      <p class="fine">一般於 3 個工作天內回覆。河馬眼睛的使用問題，也可以先看<a href="/support/">支援中心</a>。</p>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand">
-          <svg class="logo-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g transform="translate(4 1)"><path d="M 10 18 C 16 14, 21 10, 28 8 C 35 6, 41 10, 41 17 C 41 24, 36 28, 33 33 C 30 37.5, 29 41, 30.5 45.5 C 32.5 51.5, 40 54, 44.5 49.5 C 48 45.5, 46 39, 40.5 40" fill="none" stroke="#1E6B33" stroke-width="5.5" stroke-linecap="round"/><circle cx="28" cy="15.5" r="2.5" fill="#1E6B33"/></g></svg>
-          海馬博一
-        </div>
-        <p class="footer-note">台灣 AI 應用開發團隊。<br>以 AI 打造中小企業經營工具、數據分析、聊天機器人與股市回測分析，並開發消費性 App「河馬眼睛」。<br>海馬博一有限公司｜統一編號 60467315<br>地址：新北市土城區中央路3段87號5樓之1<br>聯絡信箱：<a href="mailto:dev@kaibaboy.com.tw">dev@kaibaboy.com.tw</a></p>
-        <p class="footer-note" lang="en">Kaiba Boy Co., Ltd. is a Taiwan-based software company building AI-powered business tools, data analytics, chatbots, and the “Hippo Eyes” iOS app.<br>5F.-1, No. 87, Sec. 3, Zhongyang Rd., Tucheng Dist., New Taipei City 236, Taiwan</p>
-      </div>
-      <div>
-        <h4>網站導覽</h4>
-        <ul>
-          <li><a href="/">首頁</a></li>
-          <li><a href="/#services">服務項目</a></li>
-          <li><a href="/#about">關於我們</a></li>
-          <li><a href="/hippo-eyes/">河馬眼睛 App</a></li>
-          <li><a href="/support/">支援中心</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>法律資訊</h4>
-        <ul>
-          <li><a href="/privacy/">網站隱私權政策</a></li>
-          <li><a href="/hippo-eyes/privacy/">河馬眼睛隱私權政策</a></li>
-          <li><a href="/hippo-eyes/terms/">河馬眼睛使用條款</a></li>
-          <li><a href="/terms/">網站使用條款</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span data-year>2026</span> 海馬博一有限公司 Kaiba Boy Co., Ltd. All rights reserved.</span>
-      <span><a href="mailto:dev@kaibaboy.com.tw">dev@kaibaboy.com.tw</a></span>
-    </div>
+    <nav class="footer-links" aria-label="頁尾選單">
+      <a href="/">首頁</a><a href="/hippo-eyes/">河馬眼睛</a><a href="/support/">支援中心</a><a href="/hippo-eyes/privacy/">河馬眼睛隱私權政策</a><a href="/hippo-eyes/terms/">河馬眼睛使用條款</a><a href="/privacy/">網站隱私權政策</a><a href="/terms/">網站使用條款</a>
+    </nav>
+    <p class="footer-legal">海馬博一有限公司　統一編號 60467315　新北市土城區中央路3段87號5樓之1　<a href="mailto:dev@kaibaboy.com.tw">dev@kaibaboy.com.tw</a></p>
+    <p class="footer-legal" lang="en">Kaiba Boy Co., Ltd. — AI business tools, data analytics, chatbots and the “Hippo Eyes” iOS app. 5F.-1, No. 87, Sec. 3, Zhongyang Rd., Tucheng Dist., New Taipei City 236, Taiwan</p>
+    <p class="footer-legal">© <span data-year>2026</span> 海馬博一有限公司 Kaiba Boy Co., Ltd. All rights reserved.</p>
   </div>
 </footer>
 
